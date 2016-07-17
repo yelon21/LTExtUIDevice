@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0523799A41D2CD957D3D838A53ACDCAA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3121CF59FA23F77BC4716F2D2EE417A5 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1383E985BC5F4E1648E8549286AE48DB /* SSKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C17B8B55F23796B709CE5F5F4D4A3E /* SSKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F4E5FD260472D2F86FC38FC78EA7CDB /* UIDevice+LTUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B3A152AC44BF9EAE663F384A8171BE /* UIDevice+LTUUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F3043389E36547263126EE4A9571645 /* Pods-LTExtUIDevice_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB4F06EEC4DE68F6E2FD2183C96484B /* Pods-LTExtUIDevice_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CF3D61BA9E036195DBAA7E3E7E9171 /* LTIOFlowBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F868651F5AB1CD8BCCF4E7CD06F6 /* LTIOFlowBytes.m */; };
+		5C866A010983EF12E75E107CE38D2AFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40163012FD008B4B45033055BDAFA500 /* Foundation.framework */; };
+		5D98821CAB9BD962B98B0077E5640C32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40163012FD008B4B45033055BDAFA500 /* Foundation.framework */; };
+		703A7CD3F87889FEB8FCAF1FAE4708E9 /* SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD15AC8D34020C29879B7D1C5AEA09B /* SSKeychain-dummy.m */; };
+		7CF6E3A48EAEEA1A307ED7EBEBA64FC6 /* Pods-LTExtUIDevice_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A61B7EB3F2D4748653922A3D3AFCB3 /* Pods-LTExtUIDevice_Example-dummy.m */; };
+		A54A0417D13BDF0FC9D12311E0FC35B6 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 74970EF1153375C503CD9D9EDFA801AA /* en.lproj */; };
+		AF2E3F55844134813A1A54D68F351F2C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E36E1EA2096CD3504313B325D87DFAB1 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B31ED825638DCF1A76209C06E8E68CE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561B12BF0018337946203565F5A0C8A1 /* Security.framework */; };
+		B45C64BF890E40280994BA1BE6A1FB30 /* UIDevice+LTNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */; };
+		B6A2689ACA5356CA3942E6829FED1481 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ED374C604340E659E3CAAD754E0372 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73BD2F6B93DAACE7EE9C54684BEAB8A /* LTExtUIDevice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BF1FFE5B0C59636046D86B288332DF /* LTExtUIDevice-dummy.m */; };
+		B93E3C4D72EEB3E92E359E6426BC5819 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = C7C5D61D1DBB4373DF82D6425982F281 /* wwanconnect.c */; };
+		BB605FF4AC09164F3C9A3118972CC9A8 /* SSKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15D4A22623A08AB4C1249A6DC98B1C /* SSKeychain.framework */; };
+		D14D70E9C1E15A84F4A0E98C17F0FC9B /* LTExtUIDevice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 737015756579853C083DFE81365E12E4 /* LTExtUIDevice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E5856593876FFB13EDA32E608138B2 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C89D4D5A8A991069801C8915F19FF94 /* wwanconnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D8428E1D998B9AD262BE4718705916 /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 66D86FE6E5147073BC47696F991B552E /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C433414DC8F7B105599B79AAEBDEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40163012FD008B4B45033055BDAFA500 /* Foundation.framework */; };
+		DBAE6F01C3823425A480C1E84C9C428A /* Pods-LTExtUIDevice_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 054B43DEC3089BB0EBAC9C52AEEC0613 /* Pods-LTExtUIDevice_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0F788F827CCCABD25F9FA9FA73F2F50 /* Pods-LTExtUIDevice_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC55ED9DD5F411D6119FA5D4AA836A6 /* Pods-LTExtUIDevice_Tests-dummy.m */; };
+		E6ECD54E475B68A82AF0A720EC9D7483 /* LTIOFlowBytes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4379D2441BE2190C4DEEFB8649C889BE /* LTIOFlowBytes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3B28D2B8E797592EAC2FD779E431B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40163012FD008B4B45033055BDAFA500 /* Foundation.framework */; };
+		F46ADD52F0BC49DCF27FB8B58738F69D /* UIDevice+LTNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F81A1560211EADE776ECA7FA63FC2711 /* UIDevice+LTUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B787EF92B2F6384546BB548350B5A9 /* UIDevice+LTUUID.m */; };
+		F973A62394450CB677EF526C5EEF13E5 /* UIDevice+LTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = A720925EB1EFADBCC83886D5741BADE6 /* UIDevice+LTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD408A72682E75E79663A84185FEEF55 /* UIDevice+LTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F2255263F6FFB0183D1A25A49B84B /* UIDevice+LTCommon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DFA32097724D0C96DE59E0CC5F9C3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347EB51510C8C7508EA98CC8655B3DF4;
+			remoteInfo = SSKeychain;
+		};
+		F6D28A0F7EF2A232D35538074D5949CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69627EC533D18174B261D3652256F8AF;
+			remoteInfo = LTExtUIDevice;
+		};
+		FA004890F1C321AD44B2BF14A951B666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347EB51510C8C7508EA98CC8655B3DF4;
+			remoteInfo = SSKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LTNet.m"; sourceTree = "<group>"; };
+		054B43DEC3089BB0EBAC9C52AEEC0613 /* Pods-LTExtUIDevice_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTExtUIDevice_Tests-umbrella.h"; sourceTree = "<group>"; };
+		080E4BD65B3E79D55602FF42BE7F4D52 /* Pods-LTExtUIDevice_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		08ED374C604340E659E3CAAD754E0372 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = Sources/SSKeychain.h; sourceTree = "<group>"; };
+		0B33CD2153D3737E0103BF289A8BDF75 /* LTExtUIDevice.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTExtUIDevice.xcconfig; sourceTree = "<group>"; };
+		0D27DE0E5A223F199136EF65A613992C /* Pods-LTExtUIDevice_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtUIDevice_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1A15D4A22623A08AB4C1249A6DC98B1C /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFABC747D2B5764DEA13C863CCE1165 /* Pods_LTExtUIDevice_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTExtUIDevice_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29610E61F78D9A30111CC7E59F1792CC /* SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSKeychain.xcconfig; sourceTree = "<group>"; };
+		2E55E6D885838DC8078F5BDA2DF09B24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3121CF59FA23F77BC4716F2D2EE417A5 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = Sources/SSKeychainQuery.m; sourceTree = "<group>"; };
+		3D97B8068C20F52D2B96E9102F900C44 /* Pods-LTExtUIDevice_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtUIDevice_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40163012FD008B4B45033055BDAFA500 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41F5F868651F5AB1CD8BCCF4E7CD06F6 /* LTIOFlowBytes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTIOFlowBytes.m; sourceTree = "<group>"; };
+		4379D2441BE2190C4DEEFB8649C889BE /* LTIOFlowBytes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTIOFlowBytes.h; sourceTree = "<group>"; };
+		45C17B8B55F23796B709CE5F5F4D4A3E /* SSKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-umbrella.h"; sourceTree = "<group>"; };
+		4BD15AC8D34020C29879B7D1C5AEA09B /* SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain-dummy.m"; sourceTree = "<group>"; };
+		4EC55ED9DD5F411D6119FA5D4AA836A6 /* Pods-LTExtUIDevice_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtUIDevice_Tests-dummy.m"; sourceTree = "<group>"; };
+		561B12BF0018337946203565F5A0C8A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		57B787EF92B2F6384546BB548350B5A9 /* UIDevice+LTUUID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LTUUID.m"; sourceTree = "<group>"; };
+		63391AE89F2A4BAB05260E94667A70AD /* Pods-LTExtUIDevice_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Tests-resources.sh"; sourceTree = "<group>"; };
+		65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LTNet.h"; sourceTree = "<group>"; };
+		66D86FE6E5147073BC47696F991B552E /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = Sources/SSKeychainQuery.h; sourceTree = "<group>"; };
+		69B3A152AC44BF9EAE663F384A8171BE /* UIDevice+LTUUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LTUUID.h"; sourceTree = "<group>"; };
+		6BC30BC227C5C950AB4516CA68E46508 /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C89D4D5A8A991069801C8915F19FF94 /* wwanconnect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
+		737015756579853C083DFE81365E12E4 /* LTExtUIDevice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtUIDevice-umbrella.h"; sourceTree = "<group>"; };
+		74970EF1153375C503CD9D9EDFA801AA /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Support/en.lproj; sourceTree = "<group>"; };
+		82BF1FFE5B0C59636046D86B288332DF /* LTExtUIDevice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTExtUIDevice-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BA041AF804E4B219BFE9778BF6CB4FA /* Pods-LTExtUIDevice_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTExtUIDevice_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A39B7572D892D3878800D74254B1F262 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E206AF0AC62CD218DCFE8BD4A6E7F0 /* Pods-LTExtUIDevice_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTExtUIDevice_Example.modulemap"; sourceTree = "<group>"; };
+		A720925EB1EFADBCC83886D5741BADE6 /* UIDevice+LTCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LTCommon.h"; sourceTree = "<group>"; };
+		A75243DC76FF89B6AC1C0A7EA9FB4B5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1967D614C5299BA8F1B5BCFBCD4A373 /* LTExtUIDevice.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTExtUIDevice.modulemap; sourceTree = "<group>"; };
+		BA9710D699351418750953FCB948AA01 /* Pods-LTExtUIDevice_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Example-resources.sh"; sourceTree = "<group>"; };
+		BBB4F06EEC4DE68F6E2FD2183C96484B /* Pods-LTExtUIDevice_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTExtUIDevice_Example-umbrella.h"; sourceTree = "<group>"; };
+		BBF16F6ACF626B480D3182AD9BAC720A /* Pods_LTExtUIDevice_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTExtUIDevice_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1504F5E456358CAD38954BBC0D3427 /* Pods-LTExtUIDevice_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTExtUIDevice_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD762AC0CC76F90BE849AE135B25EE03 /* Pods-LTExtUIDevice_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTExtUIDevice_Tests.modulemap"; sourceTree = "<group>"; };
+		C7C5D61D1DBB4373DF82D6425982F281 /* wwanconnect.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
+		C84BD3FB29225176BECEE6A94B5229B9 /* Pods-LTExtUIDevice_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTExtUIDevice_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBCE8ACEB10DCB8B13144FC1B4F34965 /* LTExtUIDevice-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtUIDevice-prefix.pch"; sourceTree = "<group>"; };
+		CE72E8E31859F76B63748D800AB3D20C /* Pods-LTExtUIDevice_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTExtUIDevice_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF4D1C8702A238192B6FCDE77C7297BB /* Pods-LTExtUIDevice_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtUIDevice_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D2A61B7EB3F2D4748653922A3D3AFCB3 /* Pods-LTExtUIDevice_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtUIDevice_Example-dummy.m"; sourceTree = "<group>"; };
+		E36E1EA2096CD3504313B325D87DFAB1 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = Sources/SSKeychain.m; sourceTree = "<group>"; };
+		E5809D26BB37B50B0C3C98195FD2347B /* LTExtUIDevice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTExtUIDevice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89ED810757A308DBBC1415F60F2672C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF58D9460BFFABA7DAC6DD53E07EA0B3 /* SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-prefix.pch"; sourceTree = "<group>"; };
+		F04A00B100FF12D27369D82A20E4EE1C /* Pods-LTExtUIDevice_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F72B7AEC54C04A8E5F8134CA15C603FC /* SSKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SSKeychain.modulemap; sourceTree = "<group>"; };
+		FC2613B66B3ED3C765EEA26F61E71A29 /* Pods-LTExtUIDevice_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTExtUIDevice_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6F2255263F6FFB0183D1A25A49B84B /* UIDevice+LTCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LTCommon.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36C4F0BFC89557A1D4896828981AD723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C433414DC8F7B105599B79AAEBDEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA2CE3660219B7F1D51499D42FF87E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B28D2B8E797592EAC2FD779E431B25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92138AF15E9EDBDC6A5D5A4D9BDBE5D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C866A010983EF12E75E107CE38D2AFE /* Foundation.framework in Frameworks */,
+				B31ED825638DCF1A76209C06E8E68CE9 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21F791862A2E4E5D3D30A5BD2B270BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D98821CAB9BD962B98B0077E5640C32 /* Foundation.framework in Frameworks */,
+				BB605FF4AC09164F3C9A3118972CC9A8 /* SSKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153DCCEEFD1419C9BC0D1259B2D33057 /* LTExtUIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				B9A6B52BD11D480DE7E41B80108341CA /* LTExtUIDevice */,
+				E161F30E4B06624318A8E3737744A042 /* Support Files */,
+			);
+			name = LTExtUIDevice;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1B2A99D7514DF5F286E53ADCA36A05FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A15D4A22623A08AB4C1249A6DC98B1C /* SSKeychain.framework */,
+				C429E45A471F79C2B66062F774D03B3B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D98C888903E492B9A6955B44A9E6397 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				153DCCEEFD1419C9BC0D1259B2D33057 /* LTExtUIDevice */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		50B32843F007825FF2B97A189BD8F93F /* Pods-LTExtUIDevice_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E89ED810757A308DBBC1415F60F2672C /* Info.plist */,
+				BD762AC0CC76F90BE849AE135B25EE03 /* Pods-LTExtUIDevice_Tests.modulemap */,
+				C84BD3FB29225176BECEE6A94B5229B9 /* Pods-LTExtUIDevice_Tests-acknowledgements.markdown */,
+				CE72E8E31859F76B63748D800AB3D20C /* Pods-LTExtUIDevice_Tests-acknowledgements.plist */,
+				4EC55ED9DD5F411D6119FA5D4AA836A6 /* Pods-LTExtUIDevice_Tests-dummy.m */,
+				080E4BD65B3E79D55602FF42BE7F4D52 /* Pods-LTExtUIDevice_Tests-frameworks.sh */,
+				63391AE89F2A4BAB05260E94667A70AD /* Pods-LTExtUIDevice_Tests-resources.sh */,
+				054B43DEC3089BB0EBAC9C52AEEC0613 /* Pods-LTExtUIDevice_Tests-umbrella.h */,
+				FC2613B66B3ED3C765EEA26F61E71A29 /* Pods-LTExtUIDevice_Tests.debug.xcconfig */,
+				3D97B8068C20F52D2B96E9102F900C44 /* Pods-LTExtUIDevice_Tests.release.xcconfig */,
+			);
+			name = "Pods-LTExtUIDevice_Tests";
+			path = "Target Support Files/Pods-LTExtUIDevice_Tests";
+			sourceTree = "<group>";
+		};
+		51F40F420DAEE70D31D2CCA792A3CFBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5809D26BB37B50B0C3C98195FD2347B /* LTExtUIDevice.framework */,
+				1BFABC747D2B5764DEA13C863CCE1165 /* Pods_LTExtUIDevice_Example.framework */,
+				BBF16F6ACF626B480D3182AD9BAC720A /* Pods_LTExtUIDevice_Tests.framework */,
+				6BC30BC227C5C950AB4516CA68E46508 /* SSKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		555646C65291B1184B84942D4E7DAE23 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBEC52953EFD78149DAAFFFEE9969D /* Pods-LTExtUIDevice_Example */,
+				50B32843F007825FF2B97A189BD8F93F /* Pods-LTExtUIDevice_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7CDBEC52953EFD78149DAAFFFEE9969D /* Pods-LTExtUIDevice_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A75243DC76FF89B6AC1C0A7EA9FB4B5A /* Info.plist */,
+				A3E206AF0AC62CD218DCFE8BD4A6E7F0 /* Pods-LTExtUIDevice_Example.modulemap */,
+				9BA041AF804E4B219BFE9778BF6CB4FA /* Pods-LTExtUIDevice_Example-acknowledgements.markdown */,
+				BD1504F5E456358CAD38954BBC0D3427 /* Pods-LTExtUIDevice_Example-acknowledgements.plist */,
+				D2A61B7EB3F2D4748653922A3D3AFCB3 /* Pods-LTExtUIDevice_Example-dummy.m */,
+				F04A00B100FF12D27369D82A20E4EE1C /* Pods-LTExtUIDevice_Example-frameworks.sh */,
+				BA9710D699351418750953FCB948AA01 /* Pods-LTExtUIDevice_Example-resources.sh */,
+				BBB4F06EEC4DE68F6E2FD2183C96484B /* Pods-LTExtUIDevice_Example-umbrella.h */,
+				0D27DE0E5A223F199136EF65A613992C /* Pods-LTExtUIDevice_Example.debug.xcconfig */,
+				CF4D1C8702A238192B6FCDE77C7297BB /* Pods-LTExtUIDevice_Example.release.xcconfig */,
+			);
+			name = "Pods-LTExtUIDevice_Example";
+			path = "Target Support Files/Pods-LTExtUIDevice_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3D98C888903E492B9A6955B44A9E6397 /* Development Pods */,
+				1B2A99D7514DF5F286E53ADCA36A05FF /* Frameworks */,
+				A391E83FBFD8A7CEE61F49AD42D99D6B /* Pods */,
+				51F40F420DAEE70D31D2CCA792A3CFBD /* Products */,
+				555646C65291B1184B84942D4E7DAE23 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A391E83FBFD8A7CEE61F49AD42D99D6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6788D8725D3E519E18D0F207E3197B4 /* SSKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9A6B52BD11D480DE7E41B80108341CA /* LTExtUIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				FFBDE08623E12ED61E64002496C8768A /* Classes */,
+			);
+			path = LTExtUIDevice;
+			sourceTree = "<group>";
+		};
+		C429E45A471F79C2B66062F774D03B3B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40163012FD008B4B45033055BDAFA500 /* Foundation.framework */,
+				561B12BF0018337946203565F5A0C8A1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC2B4A7281AE517A319AE368EE3C4C74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A39B7572D892D3878800D74254B1F262 /* Info.plist */,
+				F72B7AEC54C04A8E5F8134CA15C603FC /* SSKeychain.modulemap */,
+				29610E61F78D9A30111CC7E59F1792CC /* SSKeychain.xcconfig */,
+				4BD15AC8D34020C29879B7D1C5AEA09B /* SSKeychain-dummy.m */,
+				EF58D9460BFFABA7DAC6DD53E07EA0B3 /* SSKeychain-prefix.pch */,
+				45C17B8B55F23796B709CE5F5F4D4A3E /* SSKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSKeychain";
+			sourceTree = "<group>";
+		};
+		E161F30E4B06624318A8E3737744A042 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E55E6D885838DC8078F5BDA2DF09B24 /* Info.plist */,
+				B1967D614C5299BA8F1B5BCFBCD4A373 /* LTExtUIDevice.modulemap */,
+				0B33CD2153D3737E0103BF289A8BDF75 /* LTExtUIDevice.xcconfig */,
+				82BF1FFE5B0C59636046D86B288332DF /* LTExtUIDevice-dummy.m */,
+				CBCE8ACEB10DCB8B13144FC1B4F34965 /* LTExtUIDevice-prefix.pch */,
+				737015756579853C083DFE81365E12E4 /* LTExtUIDevice-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LTExtUIDevice";
+			sourceTree = "<group>";
+		};
+		E6788D8725D3E519E18D0F207E3197B4 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				08ED374C604340E659E3CAAD754E0372 /* SSKeychain.h */,
+				E36E1EA2096CD3504313B325D87DFAB1 /* SSKeychain.m */,
+				66D86FE6E5147073BC47696F991B552E /* SSKeychainQuery.h */,
+				3121CF59FA23F77BC4716F2D2EE417A5 /* SSKeychainQuery.m */,
+				FF555279CCB9B93665D033697405FBDA /* Resources */,
+				DC2B4A7281AE517A319AE368EE3C4C74 /* Support Files */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		FF555279CCB9B93665D033697405FBDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74970EF1153375C503CD9D9EDFA801AA /* en.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFBDE08623E12ED61E64002496C8768A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4379D2441BE2190C4DEEFB8649C889BE /* LTIOFlowBytes.h */,
+				41F5F868651F5AB1CD8BCCF4E7CD06F6 /* LTIOFlowBytes.m */,
+				A720925EB1EFADBCC83886D5741BADE6 /* UIDevice+LTCommon.h */,
+				FE6F2255263F6FFB0183D1A25A49B84B /* UIDevice+LTCommon.m */,
+				65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */,
+				01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */,
+				69B3A152AC44BF9EAE663F384A8171BE /* UIDevice+LTUUID.h */,
+				57B787EF92B2F6384546BB548350B5A9 /* UIDevice+LTUUID.m */,
+				C7C5D61D1DBB4373DF82D6425982F281 /* wwanconnect.c */,
+				6C89D4D5A8A991069801C8915F19FF94 /* wwanconnect.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29E81B96A294BC5FD012A50730B1A79D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14D70E9C1E15A84F4A0E98C17F0FC9B /* LTExtUIDevice-umbrella.h in Headers */,
+				E6ECD54E475B68A82AF0A720EC9D7483 /* LTIOFlowBytes.h in Headers */,
+				F973A62394450CB677EF526C5EEF13E5 /* UIDevice+LTCommon.h in Headers */,
+				F46ADD52F0BC49DCF27FB8B58738F69D /* UIDevice+LTNet.h in Headers */,
+				1F4E5FD260472D2F86FC38FC78EA7CDB /* UIDevice+LTUUID.h in Headers */,
+				D1E5856593876FFB13EDA32E608138B2 /* wwanconnect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD43C19CD136538DCF1D84F297760CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1383E985BC5F4E1648E8549286AE48DB /* SSKeychain-umbrella.h in Headers */,
+				B6A2689ACA5356CA3942E6829FED1481 /* SSKeychain.h in Headers */,
+				D2D8428E1D998B9AD262BE4718705916 /* SSKeychainQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BAF7B89FB7B7A245029E254DC9FBBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAE6F01C3823425A480C1E84C9C428A /* Pods-LTExtUIDevice_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0D268ADC0E40C98AB40126E85D5852 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3043389E36547263126EE4A9571645 /* Pods-LTExtUIDevice_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		347EB51510C8C7508EA98CC8655B3DF4 /* SSKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA410CA1B8728A004DE714DC61144F58 /* Build configuration list for PBXNativeTarget "SSKeychain" */;
+			buildPhases = (
+				C015D05585BAA6CB3D3233E63A26F9DB /* Sources */,
+				92138AF15E9EDBDC6A5D5A4D9BDBE5D3 /* Frameworks */,
+				4CD43C19CD136538DCF1D84F297760CF /* Headers */,
+				D8A08E042901FBD6BF4B3E25BD8A0A07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSKeychain;
+			productName = SSKeychain;
+			productReference = 6BC30BC227C5C950AB4516CA68E46508 /* SSKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		617D962A83011F71BF1B0A84F575BDE2 /* Pods-LTExtUIDevice_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D877D6024673639EF80BC54C45F164 /* Build configuration list for PBXNativeTarget "Pods-LTExtUIDevice_Tests" */;
+			buildPhases = (
+				1607D1F160CB588F18CBBDA153091793 /* Sources */,
+				36C4F0BFC89557A1D4896828981AD723 /* Frameworks */,
+				56BAF7B89FB7B7A245029E254DC9FBBC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LTExtUIDevice_Tests";
+			productName = "Pods-LTExtUIDevice_Tests";
+			productReference = BBF16F6ACF626B480D3182AD9BAC720A /* Pods_LTExtUIDevice_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		69627EC533D18174B261D3652256F8AF /* LTExtUIDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249C065CE3700A129731B14EE9014A69 /* Build configuration list for PBXNativeTarget "LTExtUIDevice" */;
+			buildPhases = (
+				CC909C6D80A783EFB2DE167C334DA35C /* Sources */,
+				C21F791862A2E4E5D3D30A5BD2B270BA /* Frameworks */,
+				29E81B96A294BC5FD012A50730B1A79D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				921CB7E6C7D4C493FC0056C714042F80 /* PBXTargetDependency */,
+			);
+			name = LTExtUIDevice;
+			productName = LTExtUIDevice;
+			productReference = E5809D26BB37B50B0C3C98195FD2347B /* LTExtUIDevice.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEDB93FD0361B5FFD975CCDCBC600F66 /* Pods-LTExtUIDevice_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD3948518C56FD42DCA6AE8764083EA /* Build configuration list for PBXNativeTarget "Pods-LTExtUIDevice_Example" */;
+			buildPhases = (
+				BF90C18007AA48DC9E9BE750CE472FD4 /* Sources */,
+				3FA2CE3660219B7F1D51499D42FF87E3 /* Frameworks */,
+				FD0D268ADC0E40C98AB40126E85D5852 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				876E8C054AD462FA01E721158FCE84D2 /* PBXTargetDependency */,
+				11C6AD214728DFC3AC97AC869510B9F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-LTExtUIDevice_Example";
+			productName = "Pods-LTExtUIDevice_Example";
+			productReference = 1BFABC747D2B5764DEA13C863CCE1165 /* Pods_LTExtUIDevice_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 51F40F420DAEE70D31D2CCA792A3CFBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69627EC533D18174B261D3652256F8AF /* LTExtUIDevice */,
+				CEDB93FD0361B5FFD975CCDCBC600F66 /* Pods-LTExtUIDevice_Example */,
+				617D962A83011F71BF1B0A84F575BDE2 /* Pods-LTExtUIDevice_Tests */,
+				347EB51510C8C7508EA98CC8655B3DF4 /* SSKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8A08E042901FBD6BF4B3E25BD8A0A07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54A0417D13BDF0FC9D12311E0FC35B6 /* en.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1607D1F160CB588F18CBBDA153091793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F788F827CCCABD25F9FA9FA73F2F50 /* Pods-LTExtUIDevice_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF90C18007AA48DC9E9BE750CE472FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF6E3A48EAEEA1A307ED7EBEBA64FC6 /* Pods-LTExtUIDevice_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C015D05585BAA6CB3D3233E63A26F9DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703A7CD3F87889FEB8FCAF1FAE4708E9 /* SSKeychain-dummy.m in Sources */,
+				AF2E3F55844134813A1A54D68F351F2C /* SSKeychain.m in Sources */,
+				0523799A41D2CD957D3D838A53ACDCAA /* SSKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC909C6D80A783EFB2DE167C334DA35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73BD2F6B93DAACE7EE9C54684BEAB8A /* LTExtUIDevice-dummy.m in Sources */,
+				34CF3D61BA9E036195DBAA7E3E7E9171 /* LTIOFlowBytes.m in Sources */,
+				FD408A72682E75E79663A84185FEEF55 /* UIDevice+LTCommon.m in Sources */,
+				B45C64BF890E40280994BA1BE6A1FB30 /* UIDevice+LTNet.m in Sources */,
+				F81A1560211EADE776ECA7FA63FC2711 /* UIDevice+LTUUID.m in Sources */,
+				B93E3C4D72EEB3E92E359E6426BC5819 /* wwanconnect.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C6AD214728DFC3AC97AC869510B9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSKeychain;
+			target = 347EB51510C8C7508EA98CC8655B3DF4 /* SSKeychain */;
+			targetProxy = 3DFA32097724D0C96DE59E0CC5F9C3EC /* PBXContainerItemProxy */;
+		};
+		876E8C054AD462FA01E721158FCE84D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LTExtUIDevice;
+			target = 69627EC533D18174B261D3652256F8AF /* LTExtUIDevice */;
+			targetProxy = F6D28A0F7EF2A232D35538074D5949CE /* PBXContainerItemProxy */;
+		};
+		921CB7E6C7D4C493FC0056C714042F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSKeychain;
+			target = 347EB51510C8C7508EA98CC8655B3DF4 /* SSKeychain */;
+			targetProxy = FA004890F1C321AD44B2BF14A951B666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0669600B315D5173625C8C9F6461E1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B33CD2153D3737E0103BF289A8BDF75 /* LTExtUIDevice.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LTExtUIDevice/LTExtUIDevice-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTExtUIDevice/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LTExtUIDevice/LTExtUIDevice.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LTExtUIDevice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		241593BB8E0C8B3563C4EDB331F55322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D97B8068C20F52D2B96E9102F900C44 /* Pods-LTExtUIDevice_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LTExtUIDevice_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTExtUIDevice_Tests/Pods-LTExtUIDevice_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTExtUIDevice_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58DDFCB85A818DB52DCB414B94CB2F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29610E61F78D9A30111CC7E59F1792CC /* SSKeychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSKeychain/SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSKeychain/SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70DD5BBCC8D3D74C8144805D2C6BF28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D27DE0E5A223F199136EF65A613992C /* Pods-LTExtUIDevice_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LTExtUIDevice_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTExtUIDevice_Example/Pods-LTExtUIDevice_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTExtUIDevice_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		731C44E0CB20EE918569094DFABC8DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B33CD2153D3737E0103BF289A8BDF75 /* LTExtUIDevice.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LTExtUIDevice/LTExtUIDevice-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTExtUIDevice/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LTExtUIDevice/LTExtUIDevice.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LTExtUIDevice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BBD513D4DF689FEFA98962D26AFF6F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4D1C8702A238192B6FCDE77C7297BB /* Pods-LTExtUIDevice_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LTExtUIDevice_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTExtUIDevice_Example/Pods-LTExtUIDevice_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTExtUIDevice_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		845904AB9218DC41EAFFD10F22944C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC2613B66B3ED3C765EEA26F61E71A29 /* Pods-LTExtUIDevice_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LTExtUIDevice_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTExtUIDevice_Tests/Pods-LTExtUIDevice_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTExtUIDevice_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD7F34D402A6B5742B0EEEAB14F50AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29610E61F78D9A30111CC7E59F1792CC /* SSKeychain.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSKeychain/SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSKeychain/SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D877D6024673639EF80BC54C45F164 /* Build configuration list for PBXNativeTarget "Pods-LTExtUIDevice_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845904AB9218DC41EAFFD10F22944C91 /* Debug */,
+				241593BB8E0C8B3563C4EDB331F55322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249C065CE3700A129731B14EE9014A69 /* Build configuration list for PBXNativeTarget "LTExtUIDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0669600B315D5173625C8C9F6461E1F6 /* Debug */,
+				731C44E0CB20EE918569094DFABC8DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD3948518C56FD42DCA6AE8764083EA /* Build configuration list for PBXNativeTarget "Pods-LTExtUIDevice_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70DD5BBCC8D3D74C8144805D2C6BF28F /* Debug */,
+				7BBD513D4DF689FEFA98962D26AFF6F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA410CA1B8728A004DE714DC61144F58 /* Build configuration list for PBXNativeTarget "SSKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD7F34D402A6B5742B0EEEAB14F50AD /* Debug */,
+				58DDFCB85A818DB52DCB414B94CB2F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

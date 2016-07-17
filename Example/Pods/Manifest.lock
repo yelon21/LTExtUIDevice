@@ -1,0 +1,19 @@
+PODS:
+  - LTExtUIDevice (0.1.0):
+    - SSKeychain (~> 1.4.0)
+  - SSKeychain (1.4.0)
+
+DEPENDENCIES:
+  - LTExtUIDevice (from `../`)
+
+EXTERNAL SOURCES:
+  LTExtUIDevice:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LTExtUIDevice: 1713453c032fb1cbad263857ec438cba0f81b8bc
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+
+PODFILE CHECKSUM: 58a7c4ff5463895cc14a2ebfcb71a3648f85dbfc
+
+COCOAPODS: 1.0.0

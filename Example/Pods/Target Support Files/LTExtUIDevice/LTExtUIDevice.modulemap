@@ -1,0 +1,6 @@
+framework module LTExtUIDevice {
+  umbrella header "LTExtUIDevice-umbrella.h"
+
+  export *
+  module * { export * }
+}

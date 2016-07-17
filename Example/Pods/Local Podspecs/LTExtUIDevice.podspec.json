@@ -1,0 +1,27 @@
+{
+  "name": "LTExtUIDevice",
+  "version": "0.1.0",
+  "summary": "A short description of LTExtUIDevice.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yelon21/LTExtUIDevice",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yelon21": "254956982@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yelon21/LTExtUIDevice.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "LTExtUIDevice/Classes/**/*",
+  "dependencies": {
+    "SSKeychain": [
+      "~> 1.4.0"
+    ]
+  }
+}

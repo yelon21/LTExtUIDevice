@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LTExtUIDevice_Example' do
+  pod 'LTExtUIDevice', :path => '../'
+
+  target 'LTExtUIDevice_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
