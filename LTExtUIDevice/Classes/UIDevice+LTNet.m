@@ -232,7 +232,7 @@ static dispatch_queue_t ip_operation_readwrite_queue() {
     }
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", rex];
     
-    BOOL vaild = [predicate evaluateWithObject:ipString];
+    BOOL vaild = [predicate evaluateWithObject:ipString ];
     return vaild;
 }
 
