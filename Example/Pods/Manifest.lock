@@ -1,19 +1,19 @@
 PODS:
   - LTExtUIDevice (0.1.0):
-    - SSKeychain (~> 1.4.0)
-  - SSKeychain (1.4.0)
+    - SAMKeychain (~> 1.5.2)
+  - SAMKeychain (1.5.2)
 
 DEPENDENCIES:
   - LTExtUIDevice (from `../`)
 
 EXTERNAL SOURCES:
   LTExtUIDevice:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  LTExtUIDevice: 1713453c032fb1cbad263857ec438cba0f81b8bc
-  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+  LTExtUIDevice: e80a62862e0d795253f94c9e7c2736b84cf21fc3
+  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
 
 PODFILE CHECKSUM: 58a7c4ff5463895cc14a2ebfcb71a3648f85dbfc
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.0.rc.2

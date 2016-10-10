@@ -38,5 +38,5 @@ LTExtUIDevice 个人工具 持续积累ing.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SSKeychain', '~> 1.4.0'
+  s.dependency 'SAMKeychain', '~> 1.5.2'
 end

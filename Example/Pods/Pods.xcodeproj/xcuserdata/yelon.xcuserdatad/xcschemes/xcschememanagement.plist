@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SSKeychain.xcscheme</key>
+		<key>SAMKeychain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>347EB51510C8C7508EA98CC8655B3DF4</key>
+		<key>0FF5F89C3D784EDAA9D004A8EA1A5632</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69627EC533D18174B261D3652256F8AF</key>
+		<key>AEF848B5DD2705016CDCA3B2608A8BF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CEDB93FD0361B5FFD975CCDCBC600F66</key>
+		<key>FE0985082B2B430376CE254F60D00379</key>
 		<dict>
 			<key>primary</key>
 			<true/>

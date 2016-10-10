@@ -85,9 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/LTExtUIDevice/LTExtUIDevice.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SSKeychain/SSKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SAMKeychain/SAMKeychain.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/LTExtUIDevice/LTExtUIDevice.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SSKeychain/SSKeychain.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SAMKeychain/SAMKeychain.framework"
 fi

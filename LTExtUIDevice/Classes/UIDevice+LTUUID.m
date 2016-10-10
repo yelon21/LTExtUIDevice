@@ -7,14 +7,14 @@
 //
 
 #import "UIDevice+LTUUID.h"
-#import "SSKeychain.h"
+#import "SAMKeychain.h"
 
 @implementation UIDevice (LTUUID)
 
 + (NSString *)LT_appUUID{
     
     NSString *bundleId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
-    NSString *retrieveuuid = [SSKeychain passwordForService:bundleId
+    NSString *retrieveuuid = [SAMKeychain passwordForService:bundleId
                                                     account:@"_uuid"];
     if (retrieveuuid == nil || [retrieveuuid isEqualToString:@""]){
         
@@ -24,7 +24,7 @@
         CFRelease(uuid);
         retrieveuuid = [NSString stringWithFormat:@"%@", uuidStr];
         CFRelease(uuidStr);
-        [SSKeychain setPassword:retrieveuuid
+        [SAMKeychain setPassword:retrieveuuid
                      forService:bundleId
                         account:@"_uuid"];
     }

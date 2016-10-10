@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '69627EC533D18174B261D3652256F8AF'
+               BlueprintIdentifier = 'FE0985082B2B430376CE254F60D00379'
                BlueprintName = 'LTExtUIDevice'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LTExtUIDevice.framework'>
