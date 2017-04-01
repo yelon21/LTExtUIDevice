@@ -7,6 +7,7 @@
 //
 
 #import "LYViewController.h"
+#import "UIDevice+LTNet.h"
 
 @interface LYViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    NSString *iipp = [UIDevice LT_getLocalAddress];
+    NSLog(@"iipp=%@",iipp);
 }
 
 - (void)didReceiveMemoryWarning

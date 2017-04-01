@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03FFEB2CA156F7FC47399E5008615049 /* UIDevice+LTNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */; };
 		262DCC76E2B72134C0F69A9738756D30 /* SAMKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A6C54E19BDC4447BCD0AB7F70A30BF /* SAMKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		268FEEDFBB578861B787C400909F9381 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A5951A74082C57801B593CC89807AF50 /* SAMKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		31CE54897AE423F1769AD4BDB45A9C63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8349015A18151FF4379FD59AEBF27FBD /* Foundation.framework */; };
-		33299076F73A36303D08257F61335859 /* UIDevice+LTNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3725E328304C8F4F7A14396DEFDFB12A /* LTExtUIDevice-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BF1FFE5B0C59636046D86B288332DF /* LTExtUIDevice-dummy.m */; };
 		3859928DC134C6E9709EB1E86F26D94A /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DB29B6CE6347CBCC6F89D831B89EE /* SAMKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4529872FEDF9DE8E59B942C371B6A0AE /* LTExtUIDevice-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 737015756579853C083DFE81365E12E4 /* LTExtUIDevice-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,7 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LTNet.m"; sourceTree = "<group>"; };
 		054B43DEC3089BB0EBAC9C52AEEC0613 /* Pods-LTExtUIDevice_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTExtUIDevice_Tests-umbrella.h"; sourceTree = "<group>"; };
 		080E4BD65B3E79D55602FF42BE7F4D52 /* Pods-LTExtUIDevice_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		0B33CD2153D3737E0103BF289A8BDF75 /* LTExtUIDevice.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTExtUIDevice.xcconfig; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		4EC55ED9DD5F411D6119FA5D4AA836A6 /* Pods-LTExtUIDevice_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTExtUIDevice_Tests-dummy.m"; sourceTree = "<group>"; };
 		57B787EF92B2F6384546BB548350B5A9 /* UIDevice+LTUUID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LTUUID.m"; sourceTree = "<group>"; };
 		63391AE89F2A4BAB05260E94667A70AD /* Pods-LTExtUIDevice_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTExtUIDevice_Tests-resources.sh"; sourceTree = "<group>"; };
-		65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LTNet.h"; sourceTree = "<group>"; };
 		69B3A152AC44BF9EAE663F384A8171BE /* UIDevice+LTUUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LTUUID.h"; sourceTree = "<group>"; };
 		6C89D4D5A8A991069801C8915F19FF94 /* wwanconnect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
 		737015756579853C083DFE81365E12E4 /* LTExtUIDevice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTExtUIDevice-umbrella.h"; sourceTree = "<group>"; };
@@ -334,8 +330,6 @@
 				41F5F868651F5AB1CD8BCCF4E7CD06F6 /* LTIOFlowBytes.m */,
 				A720925EB1EFADBCC83886D5741BADE6 /* UIDevice+LTCommon.h */,
 				FE6F2255263F6FFB0183D1A25A49B84B /* UIDevice+LTCommon.m */,
-				65D89BE9641DB5B584FA2A63B1F3B497 /* UIDevice+LTNet.h */,
-				01634C0E184240175F13895FF7C581B7 /* UIDevice+LTNet.m */,
 				69B3A152AC44BF9EAE663F384A8171BE /* UIDevice+LTUUID.h */,
 				57B787EF92B2F6384546BB548350B5A9 /* UIDevice+LTUUID.m */,
 				C7C5D61D1DBB4373DF82D6425982F281 /* wwanconnect.c */,
@@ -372,7 +366,6 @@
 				4529872FEDF9DE8E59B942C371B6A0AE /* LTExtUIDevice-umbrella.h in Headers */,
 				D4A987DF1C58D2BB9811ABC6FFB2DBBD /* LTIOFlowBytes.h in Headers */,
 				D1803CEF539871CF1DCE64F1C5C1CD0E /* UIDevice+LTCommon.h in Headers */,
-				33299076F73A36303D08257F61335859 /* UIDevice+LTNet.h in Headers */,
 				EFAB1F8D1114D14182F211FEC45B289B /* UIDevice+LTUUID.h in Headers */,
 				A859DC3C6E75A0D32ABC83A1FAD29BB2 /* wwanconnect.h in Headers */,
 			);
@@ -525,7 +518,6 @@
 				3725E328304C8F4F7A14396DEFDFB12A /* LTExtUIDevice-dummy.m in Sources */,
 				886B9B804391A20754F227633AABBA28 /* LTIOFlowBytes.m in Sources */,
 				6796750D4F06B36AAC9DBF689C553E90 /* UIDevice+LTCommon.m in Sources */,
-				03FFEB2CA156F7FC47399E5008615049 /* UIDevice+LTNet.m in Sources */,
 				FB456FB71658DB7BB44863D3000FB8B0 /* UIDevice+LTUUID.m in Sources */,
 				AFACAF1ED5DD0F612BD03FEAE36384C3 /* wwanconnect.c in Sources */,
 			);
