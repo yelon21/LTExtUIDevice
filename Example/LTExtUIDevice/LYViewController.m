@@ -7,7 +7,7 @@
 //
 
 #import "LYViewController.h"
-#import "UIDevice+LTNet.h"
+#import "UIDevice+LTCommon.h"
 
 @interface LYViewController ()
 
@@ -24,8 +24,18 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    NSString *iipp = [UIDevice LT_getLocalAddress];
-    NSLog(@"iipp=%@",iipp);
+    NSLog(@"LT_platform=%@",[UIDevice LT_platform]);
+    NSLog(@"LT_hwmodel=%@",[UIDevice LT_hwmodel]);
+    
+    NSLog(@"LT_cpuFrequency=%ld",[UIDevice LT_cpuFrequency]);
+    NSLog(@"LT_busFrequency=%ld",[UIDevice LT_busFrequency]);
+    NSLog(@"LT_totalMemory=%ld",[UIDevice LT_totalMemory]);
+    NSLog(@"LT_userMemory=%ld",[UIDevice LT_userMemory]);
+    NSLog(@"LT_maxSocketBufferSize=%ld",[UIDevice LT_maxSocketBufferSize]);
+    
+    NSLog(@"LT_totalDiskSpace=%@",[UIDevice LT_totalDiskSpace]);
+    NSLog(@"LT_freeDiskSpace=%@",[UIDevice LT_freeDiskSpace]);
+    
 }
 
 - (void)didReceiveMemoryWarning

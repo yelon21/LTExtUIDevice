@@ -8,7 +8,8 @@
 
 #import "UIDevice+LTCommon.h"
 #include <sys/utsname.h>
-
+#include <sys/stat.h>
+#include <sys/sysctl.h>
 @implementation UIDevice (LTCommon)
 
 + (CGSize)LT_deviceScreenSize{
@@ -212,4 +213,114 @@
     return platform;
 }
 
+#pragma mark 判断 越 - 狱
++ (BOOL)LT_isJailbroken{
+
+    BOOL jailbroken = NO;
+    
+    NSArray *checkPaths = @[@"/Applications/Cydia.app",
+                            @"/Library/MobileSubstrate/MobileSubstrate.dylib",
+                            @"/private/var/lib/apt/",
+                            @"/bin/bash",
+                            @"/bin/sh",
+                            @"/var/cache/apt",
+                            @"/var/lib/apt",
+                            @"/usr/sbin/sshd",
+                            @"/etc/ssh/sshd_config",
+                            @"/usr/libexec/ssh-keysign",
+                            @"/usr/sbin/sshd",
+                            @"/etc/apt"];
+    
+    for (NSString *path in checkPaths) {
+        
+        const char *pathC = [path cStringUsingEncoding:NSUTF8StringEncoding];
+        
+        struct stat s;
+        
+        int result = stat(pathC,&s);
+        if (result == 0) {
+            
+            jailbroken = YES;
+            break;
+        }
+    }
+    
+    return jailbroken;
+}
+
+#pragma mark attributes Of File System
++ (NSNumber *)LT_totalDiskSpace{
+    
+    NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory()
+                                                                                        error:nil];
+    return [fattributes objectForKey:NSFileSystemSize];
+}
+
++ (NSNumber *)LT_freeDiskSpace{
+    
+    NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory()
+                                                                                        error:nil];
+    return [fattributes objectForKey:NSFileSystemFreeSize];
+}
+
+#pragma mark sysctlbyname utils
++ (NSString *)LT_getSysInfoByName:(char *)typeSpecifier{
+   
+    size_t size;
+    sysctlbyname(typeSpecifier, NULL, &size, NULL, 0);
+    
+    char *answer = malloc(size);
+    sysctlbyname(typeSpecifier, answer, &size, NULL, 0);
+    
+    NSString *results = [NSString stringWithCString:answer encoding: NSUTF8StringEncoding];
+    
+    free(answer);
+    return results;
+}
+
++ (NSString *)LT_platform{
+    
+    return [self LT_getSysInfoByName:"hw.machine"];
+}
+
+
+// Thanks, Tom Harrington (Atomicbird)
++ (NSString *)LT_hwmodel{
+    
+    return [self LT_getSysInfoByName:"hw.model"];
+}
+#pragma mark sysctl utils
++ (NSUInteger)LT_getSysInfo: (uint) typeSpecifier{
+    
+    size_t size = sizeof(int);
+    int results;
+    int mib[2] = {CTL_HW, typeSpecifier};
+    sysctl(mib, 2, &results, &size, NULL, 0);
+    return (NSUInteger) results;
+}
+
++ (NSUInteger)LT_cpuFrequency{
+    
+    return [self LT_getSysInfo:HW_CPU_FREQ];
+}
+
++ (NSUInteger)LT_busFrequency{
+    
+    return [self LT_getSysInfo:HW_BUS_FREQ];
+}
+
++ (NSUInteger)LT_totalMemory{
+    
+    return [self LT_getSysInfo:HW_PHYSMEM];
+}
+
++ (NSUInteger)LT_userMemory{
+    
+    return [self LT_getSysInfo:HW_USERMEM];
+}
+
++ (NSUInteger)LT_maxSocketBufferSize{
+    
+    return [self LT_getSysInfo:KIPC_MAXSOCKBUF];
+}
 @end
