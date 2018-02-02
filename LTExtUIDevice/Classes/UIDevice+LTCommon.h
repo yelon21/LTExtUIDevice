@@ -38,3 +38,6 @@
 + (NSUInteger)LT_maxSocketBufferSize;
 
 @end
+
+
+#define LT_IsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
